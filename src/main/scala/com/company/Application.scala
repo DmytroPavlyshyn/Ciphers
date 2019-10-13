@@ -24,7 +24,7 @@ object Application extends App {
 
 
 
-  ciphers.foreach(format(_, "HelloWorld"))
+  ciphers.foreach(format(_, args(0).replaceAll("\\s","")))
 
   def format(cipher:Cipher, input:String): Unit = {
 
