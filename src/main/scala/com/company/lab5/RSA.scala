@@ -3,7 +3,7 @@ package com.company.lab5
 import java.util.Base64
 
 import com.company.interfaces.Cipher
-import lab5.RSAUtil
+import com.company.lab5.RSAUtil
 import RSAUtil._
 
 class RSA extends Cipher{

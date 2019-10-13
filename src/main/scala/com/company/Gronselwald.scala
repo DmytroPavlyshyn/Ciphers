@@ -1,4 +1,4 @@
-package com.company.lab2
+package com.company
 
 import com.company.Alphabet._
 import com.company.interfaces.Cipher

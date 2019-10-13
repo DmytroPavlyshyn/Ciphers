@@ -1,4 +1,4 @@
-package lab5;
+package com.company.lab5;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -63,15 +63,5 @@ public class RSAUtil {
         return decrypt(Base64.getDecoder().decode(data.getBytes()), getPrivateKey(base64PrivateKey));
     }
 
-    public static void main(String[] args) throws IllegalBlockSizeException, InvalidKeyException, NoSuchPaddingException, BadPaddingException {
-        try {
-            String encryptedString = Base64.getEncoder().encodeToString(encrypt("Dhiraj is the author", publicKey));
-            System.out.println(encryptedString);
-            String decryptedString = RSAUtil.decrypt(encryptedString, privateKey);
-            System.out.println(decryptedString);
-        } catch (NoSuchAlgorithmException e) {
-            System.err.println(e.getMessage());
-        }
 
-    }
 }

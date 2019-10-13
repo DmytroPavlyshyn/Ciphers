@@ -1,7 +1,7 @@
 package com.company.lab2;
 
 import java.awt.*;
-
+//TODO fix bug with z letter
 public final class PolibiyKeyTable {
 
     public final static char[][] polibiyKeyTable =

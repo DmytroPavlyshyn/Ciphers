@@ -17,11 +17,6 @@ class Playfair extends Cipher {
   val LOWER_INDEX = -1
   override def getName: String = "Playfair"
 
-  //scala.util.Random.shuffle(alphabet.dropRight(0).grouped(4).toList)
-  {
-    println(polibiyMatrix)
-  }
-
    def core(s: String, bound:Int, resetValue:Int, step:Int): String = {
     val length = s.length
     if (length % 2 != 0) {

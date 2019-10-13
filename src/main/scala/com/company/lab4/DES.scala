@@ -21,8 +21,8 @@ class DES(key: SecretKey) extends Cipher{
   }
 
   override def decode(s: String): String = {
-    val decoded = s.getBytes(Charset.forName("UTF8"))
-ч    val bytesUTF8 = decryptionCipher.doFinal(decoded)
-    new String(Base64.getDecoder.decode(bytesUTF8))
+    val decoded = Base64.getDecoder.decode(s)
+    val bytesUTF8 = decryptionCipher.doFinal(decoded)
+    new String(bytesUTF8,Charset.forName("UTF8"))
   }
 }
