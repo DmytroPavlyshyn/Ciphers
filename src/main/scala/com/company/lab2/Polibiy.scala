@@ -1,9 +1,8 @@
-package com.company
+package com.company.lab2
 
 import java.util
 
 import com.company.interfaces.Cipher
-import com.company.lab2.PolibiyKeyTable
 
 class Polibiy extends Cipher {
 

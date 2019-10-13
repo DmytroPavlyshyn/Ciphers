@@ -2,6 +2,7 @@ package com.company
 
 import com.company.interfaces.Cipher
 import com.company.lab1.{CesarCipher, Rearrangement, Replacement}
+import com.company.lab2.Polibiy
 import com.company.lab3.{Playfair, Vernam}
 import com.company.lab4.DES
 import com.company.lab5.RSA
